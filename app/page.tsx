@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-//export default function Home() {
+export default function Home() {
   return (
     <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
       <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
@@ -61,20 +61,5 @@ import Image from "next/image";
         </div>
       </main>
     </div>
-  );
-}
-// app/page.tsx
-export default function Home() {
-  return (
-    <main style={{ padding: '2rem', fontFamily: 'system-ui' }}>
-      <h1>TikTok Shop Stats Backend</h1>
-      <p>插件数据中转站 - Vercel 已就绪</p>
-      
-      <h2>测试 API</h2>
-      <ul>
-        <li>GET <code>/api/hello</code> → 返回欢迎消息</li>
-        <li>POST <code>/api/stats</code> → 接收插件上传的数据</li>
-      </ul>
-    </main>
   );
 }
