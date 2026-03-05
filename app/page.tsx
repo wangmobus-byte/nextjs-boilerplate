@@ -66,15 +66,10 @@ import Image from "next/image";
 // app/page.tsx
 export default function Home() {
   return (
-    <main style={{ padding: '2rem', fontFamily: 'system-ui' }}>
-      <h1>TikTok Shop Stats Backend</h1>
-      <p>插件数据中转站 - Vercel 已就绪</p>
-      
-      <h2>测试 API</h2>
-      <ul>
-        <li>GET <code>/api/hello</code> → 返回欢迎消息</li>
-        <li>POST <code>/api/stats</code> → 接收插件上传的数据</li>
-      </ul>
+    <main style={{ padding: '40px', textAlign: 'center', fontFamily: 'system-ui' }}>
+      <h1 style={{ color: '#0066cc' }}>TikTok Shop 数据后台 - 已连接 Vercel</h1>
+      <p>当前时间：{new Date().toLocaleString()}</p>
+      <p>API 测试：访问 <code>/api/hello</code> 查看 JSON</p>
     </main>
   );
 }
